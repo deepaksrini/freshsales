@@ -1,0 +1,280 @@
+{
+  "iparams": {
+    "requester": {
+      "slackUrl": "xtracut.slack.com",
+      "slackGrpName": "#testing",
+      "freshSalesToken": "3bM48CoEPEoEdFW9ty3-Vg",
+      "freshSalesUrl": "xtracut.freshsales.io",
+      "inactiveDeals": "1",
+      "LeadCreatedGrp": true,
+      "DealCreatedGrp": true,
+      "DealWonGrp": true,
+      "LeadCreated": true,
+      "LeadAssigned": true,
+      "DealCreated": true,
+      "DealAssigned": true,
+      "DealWon": true,
+      "DealLost": true,
+      "DealClosed": true,
+      "DealInactive": true
+    }
+  },
+  "region": "US",
+  "data": {
+    "deal": {
+      "deal_pipeline_id": {
+        "label": "Deal pipeline",
+        "type": "dropdown",
+        "value": 6659
+      },
+      "deal_product_id": {
+        "label": "Product",
+        "type": "dropdown",
+        "value": null
+      },
+      "name": {
+        "label": "Name",
+        "type": "text",
+        "value": "test123"
+      },
+      "custom_fields": [],
+      "upcoming_activities_time": {
+        "label": "Upcoming activities",
+        "type": "date_time",
+        "value": null
+      },
+      "deal_type_id": {
+        "label": "Type",
+        "type": "dropdown",
+        "value": null
+      },
+      "first_assigned_at": {
+        "label": "First assigned at",
+        "dom_type": "date_time",
+        "value": "2019-06-25T13:27:44+05:30"
+      },
+      "web_form_id": {
+        "label": "Web form",
+        "type": "dropdown",
+        "value": null
+      },
+      "contact_ids": [],
+      "lead_source_id": {
+        "label": "Source",
+        "type": "dropdown",
+        "value": null
+      },
+      "tags": {
+        "label": "Tags",
+        "type": "auto_complete",
+        "value": []
+      },
+      "import_csv_id": {
+        "label": "Import label",
+        "dom_type": "text",
+        "value": null
+      },
+      "creator_id": {
+        "label": "Created by",
+        "type": "dropdown",
+        "value": 22191
+      },
+      "active_sales_sequences": {
+        "label": "Active sales campaigns",
+        "type": "multi_select_dropdown",
+        "value": null
+      },
+      "owner_id": {
+        "label": "Owner",
+        "type": "dropdown",
+        "value": 22191
+      },
+      "is_deleted": false,
+      "last_assigned_at": {
+        "label": "Last assigned at",
+        "type": "date_time",
+        "value": "2019-06-25T13:27:44+05:30"
+      },
+      "expected_close": {
+        "label": "Expected close date",
+        "type": "date",
+        "value": "123"
+      },
+      "won_from": null,
+      "age": {
+        "label": "Age (in days)",
+        "type": "number",
+        "value": null
+      },
+      "amount": {
+        "label": "Deal value",
+        "type": "decimal",
+        "value": "777.0"
+      },
+      "deal_stage_id": {
+        "label": "Deal stage",
+        "type": "dropdown",
+        "value": 47432
+      },
+      "base_currency_amount": {
+        "label": "Deal value in Base Currency",
+        "type": "decimal",
+        "value": "777.0"
+      },
+      "id": 1518701,
+      "deal_reason_id": {
+        "label": "Lost reason",
+        "type": "dropdown",
+        "value": null
+      },
+      "territory_id": {
+        "label": "Territory",
+        "type": "dropdown",
+        "value": null
+      },
+      "last_contacted_via_sales_activity": {
+        "label": "Last activity date",
+        "type": "date_time",
+        "value": null
+      },
+      "sales_account_id": {
+        "label": "Account name",
+        "type": "auto_complete",
+        "value": 1364938
+      },
+      "deal_payment_status_id": {
+        "label": "Payment status",
+        "type": "dropdown",
+        "value": null
+      },
+      "created_at": {
+        "label": "Created at",
+        "type": "date_time",
+        "value": "2019-06-25T13:27:43+05:30"
+      },
+      "import_id": null,
+      "expected_deal_value": {
+        "label": "Expected deal value",
+        "type": "decimal",
+        "value": "777.0"
+      },
+      "currency_id": {
+        "label": "Currency",
+        "type": "dropdown",
+        "value": 6514
+      },
+      "recent_note": {
+        "label": "Recent note",
+        "type": "paragraph",
+        "value": null
+      },
+      "stage_updated_time": {
+        "label": "Deal stage updated at",
+        "type": "date_time",
+        "value": "2019-06-25T13:27:43+05:30"
+      },
+      "updated_at": {
+        "label": "Updated at",
+        "type": "date_time",
+        "value": "2019-06-25T13:27:43+05:30"
+      },
+      "last_contacted_sales_activity_mode": {
+        "label": "Last activity type",
+        "type": "dropdown",
+        "value": null
+      },
+      "completed_sales_sequences": {
+        "label": "Completed sales campaigns",
+        "type": "multi_select_dropdown",
+        "value": null
+      },
+      "campaign_id": {
+        "label": "Campaign",
+        "type": "dropdown",
+        "value": null
+      },
+      "closed_date": {
+        "label": "Closed date",
+        "type": "date",
+        "value": null
+      },
+      "lost_from": null,
+      "deal_prediction_tag": {
+        "label": "Deal Prediction",
+        "dom_type": "text",
+        "value": null
+      },
+      "updater_id": {
+        "label": "Updated by",
+        "type": "dropdown",
+        "value": null
+      },
+      "probability": {
+        "label": "Probability (%)",
+        "type": "decimal",
+        "value": 100
+      }
+    },
+    "associations": {
+      "source": null,
+      "deal_payment_status": null,
+      "campaign": null,
+      "deal_pipeline": {
+        "id": 6659,
+        "name": "Default Pipeline",
+        "position": 1,
+        "is_default": true
+      },
+      "contacts": [],
+      "creator": {
+        "deal_pipeline_id": 6659,
+        "name": "Developer Xtracut",
+        "is_active": true,
+        "email": "dev@xtracut.com",
+        "job_title": "Developer",
+        "id": 22191,
+        "created_at": "2019-01-29T23:48:24+05:30",
+        "type": "user",
+        "updated_at": "2019-01-30T17:50:46+05:30",
+        "work_number": null,
+        "time_zone": "New Delhi",
+        "mobile_number": null
+      },
+      "deal_stage": {
+        "id": 47432,
+        "name": "New",
+        "position": 1,
+        "forecast_type": "Open"
+      },
+      "territory": null,
+      "deal_product": null,
+      "currency": {
+        "id": 6514,
+        "currency_code": "INR",
+        "exchange_rate": "1.0"
+      },
+      "owner": {
+        "deal_pipeline_id": 6659,
+        "name": "Developer Xtracut",
+        "is_active": true,
+        "email": "dev@xtracut.com",
+        "job_title": "Developer",
+        "id": 22191,
+        "created_at": "2019-01-29T23:48:24+05:30",
+        "type": "user",
+        "updated_at": "2019-01-30T17:50:46+05:30",
+        "work_number": null,
+        "time_zone": "New Delhi",
+        "mobile_number": null
+      },
+      "updater": null,
+      "deal_reason": null,
+      "deal_type": null
+    }
+  },
+  "account_id": "6669",
+  "domain": "xtracut.freshsales.io",
+  "event": "onDealCreate",
+  "timestamp": 1561449463.859895,
+  "version": "2.0"
+}

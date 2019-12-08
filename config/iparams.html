@@ -1,0 +1,336 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://static.freshdev.io/fdk/2.0/assets/fresh_client.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+  integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="https://static.freshdev.io/fdk/2.0/assets/freshsales.css">
+<style>
+  .group-22 {
+    height: 206px;
+  }
+
+  .oval {
+    background-color: #000000;
+    border-radius: 90%;
+    padding-top: 3px;
+    padding-bottom: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
+  .requestor-fields {
+    height: 21px;
+    width: 111px;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 15px;
+    font-weight: 1000;
+    line-height: 52px;
+  }
+
+  .enter-slack-url {
+    height: 18px;
+    width: 93px;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+
+  .rectangle-4 {
+    padding: 10px;
+    height: 34px;
+    width: 62px;
+    border: 1px solid #E5E5E5;
+    border-radius: 3px 0 0 3px;
+    background-color: #F7F7F7;
+  }
+
+  .input-box {
+    height: 34px;
+    width: 253px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    background-color: #FFFFFF;
+  }
+
+  .rectangle-4-copy {
+    padding: 10px;
+    height: 34px;
+    width: 83px;
+    border: 1px solid #E5E5E5;
+    border-radius: 0 3px 3px 0;
+    background-color: #F7F7F7;
+    text-align: center;
+  }
+
+  .enter-slack-group-ch {
+    height: 18px;
+    width: 154px;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 37px;
+  }
+
+  .field-value {
+    height: 27px;
+    width: 307.02px;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  .rectangle-3-copy-5 {
+    height: 30px;
+    width: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    vertical-align: bottom;
+  }
+
+  .mt15 {
+    margin-top: 15px;
+  }
+
+  .number {
+    height: 14px;
+    width: 6px;
+    color: #FFFFFF;
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .slackinput {
+    height: 38px;
+    padding: 6px;
+  }
+
+  .path {
+    box-sizing: border-box;
+    height: 1px;
+    width: 694px;
+    border: 1px solid #E5E5E5;
+  }
+
+  .group-11 {
+    height: 43px;
+    width: 147px;
+  }
+</style>
+<input type="hidden" class="form-control" name="freshSalesUrl" size="35" placeholder="xyz.freshsales.io"
+  data-bind="product.domain">
+<input type="hidden" class="form-control" name="freshSalesToken" size="35" placeholder="Freshsales Token Value"
+  data-bind="product.api_key">
+<div class="container">
+  <div class="group-22">
+    <div class="row  group-11">
+      <!-- <span class="oval"><label class="number">1</label></span> -->
+      <span class="requestor-fields">Requestor fields</span>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <span class="enter-slack-url">
+            Enter the Slack URL
+          </span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <span class="rectangle-4">https://</span>&nbsp;
+          <input type="text" class="input-box slackinput" name="slackUrl">&nbsp;
+          <span class="rectangle-4-copy">slack.com</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <label class="enter-slack-group-ch">Select Group Channel</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 mt15">
+          <select id='slackGrpName' class="input-box">
+            <option disabled selected="selected">Choose a Slack Channel</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<label class="path">
+</label>
+<div class="container">
+  <div class="group-22">
+    <div class="row group-11">
+      <!-- <span class="oval"><label class="number">2</label></span> -->
+      <span class="requestor-fields">General Updates</span>
+    </div>
+    <div class="container">
+      <div class="row col-md-12">
+        <label class="field-value">Push the notification to the slack group channel</label>
+      </div>
+      <div class="row col-md-12">
+        <input type="checkbox" class="rectangle-3-copy-5" name="LeadCreatedGrp" value="LeadCreatedGrp"> <label
+          class="field-value">Lead Created</label>
+
+        <div class="row col-md-12">
+          <input type="checkbox" class="rectangle-3-copy-5" name="DealCreatedGrp" value="DealCreatedGrp">
+          <label class="field-value"> Deal Created</label>
+        </div>
+        <div class="row col-md-12">
+          <input type="checkbox" class="rectangle-3-copy-5" name="DealWonGrp" value="DealWonGrp">
+          <label class="field-value"> Deal Won</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<label class="path">
+</label>
+<div class="container">
+  <div class="row">
+    <!-- <span class="oval"><label class="number">3</label></span> -->
+    <span class="requestor-fields">Personal Updates</span>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="group-22 col-md-6 col-sm-6">
+        <div class="row col-md-12">
+          <label class="field-value">Lead updates</label>
+        </div>
+        <div class="row col-md-12">
+          <input type="checkbox" class="rectangle-3-copy-5" name="LeadCreated" value="LeadCreated">
+          <label class="field-value">Lead created</label>
+        </div>
+        <div class="row col-md-12">
+          <input type="checkbox" class="rectangle-3-copy-5" name="LeadStage" value="LeadStage">
+          <label class="field-value">Lead stage updated</label>
+        </div>
+        <div class="row col-md-12">
+          <input type="checkbox" class="rectangle-3-copy-5" name="LeadAssigned" value="LeadAssigned">
+          <label class="field-value">Lead assigned to another user</label>
+        </div>
+      </div>
+      <div class="group-22 row col-md-6 col-sm-6">
+        <div class="row col-md-12">
+          <label class="field-value">Deal updates</label>
+        </div>
+        <div class="row col-md-12">
+          <input type="checkbox" class="rectangle-3-copy-5" name="DealCreated" value="DealCreated">
+          <label class="field-value">Deal created</label>
+        </div>
+        <div class="row col-md-12">
+          <input type="checkbox" class="rectangle-3-copy-5" name="DealStage" value="DealStage">
+          <label class="field-value">Deal stage updated</label>
+        </div>
+        <div class="row col-md-12">
+          <input type="checkbox" class="rectangle-3-copy-5" name="DealAssigned" value="DealAssigned">
+          <label class="field-value">Deal assigned to another user</label>
+        </div>
+        <div class="row col-md-12">
+          <input type="checkbox" class="rectangle-3-copy-5" name="DealWon" value="DealWon">
+          <label class="field-value">Deal won</label>
+        </div>
+        <div class="row col-md-12">
+          <input type="checkbox" class="rectangle-3-copy-5" name="DealLost" value="DealLost">
+          <label class="field-value">Deal lost</label>
+        </div>
+        <div class="row col-md-12">
+          <input type="checkbox" class="rectangle-3-copy-5" name="DealClosed" value="DealClosed">
+          <label class="field-value">Deal exceeded expected closed date</label>
+        </div>
+        <div class="row col-md-12">
+          <input type="checkbox" class="rectangle-3-copy-5" name="DealInactive" value="DealInactive">
+          <label class="field-value">Deal inactive for more than <select class="1-100"></select> days</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(function () {
+    var $select = $(".1-100");
+    for (i = 1; i <= 100; i++) {
+      $select.append($('<option></option>').val(i).html(i))
+    }
+  });
+  app.initialized().then(function (client) {
+    window.client = client;
+    workspace_api_call();
+  });
+  function workspace_api_call() {
+    client.request.get("https://slack.com/api/channels.list", {
+      headers: { "Authorization": "Bearer <%= access_token %>", "Content-Type": "application/json" },
+      isOAuth: true
+    })
+      .then(function (data) {
+        JSON.parse(data.response).channels.forEach(function (channel) {
+          $('#slackGrpName').append(`<option id=${channel.id}>${channel.name}</option>`);
+        });
+        if (typeof (config) != "undefined") {
+          jQuery('#slackGrpName').val(config.requester.slackGrpName);
+        }
+
+      });
+  }
+  function postConfigs() {
+    var requester = {};
+    requester["slackUrl"] = jQuery("input[name=slackUrl]").val();
+    requester["slackGrpName"] = $('#slackGrpName option:selected').val();
+    requester["slackGrpID"] = $('#slackGrpName option:selected').attr('id'),
+      requester["freshSalesToken"] = jQuery("input[name=freshSalesToken]").val();
+    requester["freshSalesUrl"] = jQuery("input[name=freshSalesUrl]").val();
+    requester["inactiveDeals"] = jQuery(".1-100").val();
+    requester["LeadCreatedGrp"] = jQuery("input[name=LeadCreatedGrp]").is(':checked');
+    requester["DealCreatedGrp"] = jQuery("input[name=DealCreatedGrp]").is(':checked');
+    requester["DealWonGrp"] = jQuery("input[name=DealWonGrp]").is(':checked');
+    requester["LeadCreated"] = jQuery("input[name=LeadCreated]").is(':checked');
+    requester["LeadAssigned"] = jQuery("input[name=LeadAssigned]").is(':checked');
+    requester["LeadStage"] = jQuery("input[name=LeadStage]").is(':checked');
+    requester["DealCreated"] = jQuery("input[name=DealCreated]").is(':checked');
+    requester["DealAssigned"] = jQuery("input[name=DealAssigned]").is(':checked');
+    requester["DealWon"] = jQuery("input[name=DealWon]").is(':checked');
+    requester["DealLost"] = jQuery("input[name=DealLost]").is(':checked');
+    requester["DealClosed"] = jQuery("input[name=DealClosed]").is(':checked');
+    requester["DealInactive"] = jQuery("input[name=DealInactive]").is(':checked');
+    requester["DealStage"] = jQuery("input[name=DealStage]").is(':checked');
+    return {
+      requester
+    }
+  }
+</script>
+<script type="text/javascript">
+  function getConfigs(configs) {
+    if (configs) {
+      window.config = configs;
+      jQuery("input[name=slackUrl]").val(configs.requester.slackUrl);
+      jQuery("input[name=freshSalesToken]").val(configs.requester.freshSalesToken);
+      jQuery("input[name=freshSalesUrl]").val(configs.requester.freshSalesUrl);
+      jQuery(".1-100").val(configs.requester.inactiveDeals);
+      jQuery("input[name=LeadCreatedGrp]").attr('checked', configs.requester.LeadCreatedGrp);
+      jQuery("input[name=DealCreatedGrp]").attr('checked', configs.requester.DealCreatedGrp);
+      jQuery("input[name=DealWonGrp]").attr('checked', configs.requester.DealWonGrp);
+      jQuery("input[name=LeadCreated]").attr('checked', configs.requester.LeadCreated);
+      jQuery("input[name=LeadAssigned]").attr('checked', configs.requester.LeadAssigned);
+      jQuery("input[name=DealCreated]").attr('checked', configs.requester.DealCreated);
+      jQuery("input[name=DealAssigned]").attr('checked', configs.requester.DealAssigned);
+      jQuery("input[name=DealWon]").attr('checked', configs.requester.DealWon);
+      jQuery("input[name=DealLost]").attr('checked', configs.requester.DealLost);
+      jQuery("input[name=DealClosed]").attr('checked', configs.requester.DealClosed);
+      jQuery("input[name=DealInactive]").attr('checked', configs.requester.DealInactive);
+      jQuery("input[name=DealStage]").attr('checked', configs.requester.DealStage);
+      jQuery("input[name=LeadStage]").attr('checked', configs.requester.LeadStage);
+    }
+  }
+</script>

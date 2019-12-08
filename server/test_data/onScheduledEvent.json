@@ -1,0 +1,13 @@
+{
+  "account_id": 12345,
+  "event": "onScheduledEvent",
+  "timestamp": 1496400354326,
+  "region": "US",
+  "domain": "https://xyz.freshsales.io",
+  "data": {
+    "account_name": "Jacob",
+    "task_id": 1,
+    "country": "France"
+  },
+  "iparams": {}
+}

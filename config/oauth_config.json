@@ -1,0 +1,12 @@
+{
+    "client_id": "773578147638.771374642501",
+    "client_secret": "046a7b5632e6d1d00676b374a5005de0",
+    "authorize_url": "https://slack.com/oauth/authorize",
+    "token_url": "https://slack.com/api/oauth.access",
+
+    "options": {
+      "scope": "users:read users:read.email chat:write:user channels:read",
+      "redirect_uri":"http://localhost:10001/auth/callback"
+    },
+    "token_type": "account"
+  } 
